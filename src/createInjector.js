@@ -1,7 +1,7 @@
 const opts = {
-    open: '{{',
-    close: '}}',
-    last: '$'
+  open: '{{',
+  close: '}}',
+  last: '$'
 }
 
 const findPlaceholdersRegExp = new RegExp(`${opts.open}(.*?)${opts.close}`, 'g')
@@ -14,9 +14,9 @@ const findPlaceholdersRegExp = new RegExp(`${opts.open}(.*?)${opts.close}`, 'g')
  * @returns {any} - Value of the values map slice at the given key
  */
 function getValueByKey (valuesMapSlice, key) {
-    return key === opts.last && Array.isArray(valuesMapSlice)
-        ? valuesMapSlice.at(-1)
-        : valuesMapSlice[key]
+  return key === opts.last && Array.isArray(valuesMapSlice)
+    ? valuesMapSlice.at(-1)
+    : valuesMapSlice[key]
 }
 
 /**
@@ -27,7 +27,7 @@ function getValueByKey (valuesMapSlice, key) {
  * @returns {string} - Value from valuesMap found at the given keyPath
  */
 function getValueByKeyPath (keyPath, valuesMap) {
-    return keyPath.split('.').reduce(getValueByKey, valuesMap)
+  return keyPath.split('.').reduce(getValueByKey, valuesMap)
 }
 
 /**
@@ -38,9 +38,9 @@ function getValueByKeyPath (keyPath, valuesMap) {
  * @returns {string} - String in which placeholders have been replaced by values
  */
 function injectValuesToString (str, valuesMap) {
-    return str.replace(findPlaceholdersRegExp, (placeholder, keyPath) => {
-        return getValueByKeyPath(keyPath, valuesMap) || placeholder
-    })
+  return str.replace(findPlaceholdersRegExp, (placeholder, keyPath) => {
+    return getValueByKeyPath(keyPath, valuesMap) || placeholder
+  })
 }
 
 export default injectValuesToString

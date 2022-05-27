@@ -1,5 +1,5 @@
 {
-  "name": "@xenoarea/stringjector",
+  "name": "@xenoarea/string-injector",
   "version": "0.0.7",
   "description": "Little helper to replace placeholders by mapped values into a string",
   "sideEffects": false,
@@ -8,14 +8,14 @@
   "exports": "./src/createInjector.js",
   "scripts": {
     "doc": "jsdoc2md --files \"src/createInjector.js\" > doc/createInjector.md",
-    "lint": "standard \"src/**/!(*.test|index).js\"",
+    "lint": "standard \"src/**/!(*.test).js\"",
     "lint-fix": "npm run lint -- --fix",
     "prepare": "husky install",
     "test": "ava"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/xenoarea/stringjector.git"
+    "url": "git+https://github.com/xenoarea/string-injector.git"
   },
   "keywords": [
     "template",
@@ -28,9 +28,9 @@
   "author": "XenoArea <xenoarea@protonmail.com>",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/xenoarea/stringjector/issues"
+    "url": "https://github.com/xenoarea/string-injector/issues"
   },
-  "homepage": "https://github.com/xenoarea/stringjector#readme",
+  "homepage": "https://github.com/xenoarea/string-injector#readme",
   "devDependencies": {
     "ava": "^4.2.0",
     "husky": "^8.0.1",

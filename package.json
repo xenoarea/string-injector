@@ -4,8 +4,8 @@
   "description": "Little helper to replace placeholders by mapped values into a string",
   "sideEffects": false,
   "type": "module",
-  "main": "./dist/createInjector.js",
-  "exports": "./dist/createInjector.js",
+  "main": "./src/createInjector.js",
+  "exports": "./src/createInjector.js",
   "scripts": {
     "build": "webpack",
     "doc": "jsdoc2md --files \"src/createInjector.js\" > doc/createInjector.md",

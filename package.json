@@ -2,9 +2,10 @@
   "name": "@xenoarea/stringjector",
   "version": "0.0.0",
   "description": "Little helper to replace placeholders by mapped values into a string",
-  "main": "dist/stringjector.js",
+  "main": "dist/createInjector.js",
+  "type": "module",
   "scripts": {
-    "build": "webpack",
+    "build": "babel src -d dist",
     "doc": "jsdoc2md --files \"src/createInjector.js\" > doc/createInjector.md",
     "lint": "standard \"src/**/!(*.test).js\"",
     "lint-fix": "npm run lint -- --fix",

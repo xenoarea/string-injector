@@ -1,6 +1,6 @@
 {
   "name": "@xenoarea/stringjector",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "description": "Little helper to replace placeholders by mapped values into a string",
   "sideEffects": false,
   "type": "module",

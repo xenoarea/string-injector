@@ -26,7 +26,7 @@ const valuesMap = {
     }
 }
 
-const template = `I am {{name}}, a {{info.gender}} of {{info.age}} years old and I like doing {{info.hobbies.0}} and {{info.hobbies.$}}.`
+const template = 'I am {{name}}, a {{info.gender}} of {{info.age}} years old and I like doing {{info.hobbies.0}} and {{info.hobbies.$}}.'
 
 const output = injectValues(template, valuesMap)
 

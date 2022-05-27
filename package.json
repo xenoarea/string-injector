@@ -1,0 +1,43 @@
+{
+  "name": "@xenoarea/stringjector",
+  "version": "0.0.0",
+  "description": "Little helper to replace placeholders by mapped values into a string",
+  "main": "dist/stringjector.js",
+  "scripts": {
+    "build": "webpack",
+    "doc": "jsdoc2md --files \"src/createInjector.js\" > doc/createInjector.md",
+    "lint": "standard \"src/**/!(*.test).js\"",
+    "lint-fix": "npm run lint -- --fix",
+    "prepare": "husky install",
+    "test": "mocha"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/xenoarea/stringjector.git"
+  },
+  "keywords": [
+    "template",
+    "templating",
+    "string",
+    "injector",
+    "mapping",
+    "values"
+  ],
+  "author": "XenoArea <xenoarea@protonmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/xenoarea/stringjector/issues"
+  },
+  "homepage": "https://github.com/xenoarea/stringjector#readme",
+  "devDependencies": {
+    "@babel/core": "^7.18.2",
+    "@babel/preset-env": "^7.18.2",
+    "babel-loader": "^8.2.5",
+    "chai": "^4.3.6",
+    "husky": "^8.0.1",
+    "jsdoc-to-markdown": "^7.1.1",
+    "mocha": "^10.0.0",
+    "standard": "^17.0.0",
+    "webpack-cli": "^4.9.2"
+  }
+}

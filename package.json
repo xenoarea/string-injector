@@ -1,8 +1,10 @@
 {
   "name": "@xenoarea/stringjector",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Little helper to replace placeholders by mapped values into a string",
   "type": "module",
+  "main": "./dist/createInjector.js",
+  "exports": "./dist/createInjector.js",
   "scripts": {
     "build": "babel src -d dist",
     "doc": "jsdoc2md --files \"src/createInjector.js\" > doc/createInjector.md",

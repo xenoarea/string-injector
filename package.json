@@ -1,13 +1,12 @@
 {
   "name": "@xenoarea/stringjector",
-  "version": "0.0.5",
+  "version": "0.0.6",
   "description": "Little helper to replace placeholders by mapped values into a string",
   "sideEffects": false,
   "type": "module",
   "main": "./src/createInjector.js",
   "exports": "./src/createInjector.js",
   "scripts": {
-    "build": "webpack",
     "doc": "jsdoc2md --files \"src/createInjector.js\" > doc/createInjector.md",
     "lint": "standard \"src/**/!(*.test|index).js\"",
     "lint-fix": "npm run lint -- --fix",
@@ -33,16 +32,10 @@
   },
   "homepage": "https://github.com/xenoarea/stringjector#readme",
   "devDependencies": {
-    "@babel/core": "^7.18.2",
-    "@babel/preset-env": "^7.18.2",
     "ava": "^4.2.0",
-    "babel-loader": "^8.2.5",
-    "chai": "^4.3.6",
     "husky": "^8.0.1",
     "jsdoc-to-markdown": "^7.1.1",
-    "mocha": "^10.0.0",
-    "standard": "^17.0.0",
-    "webpack-cli": "^4.9.2"
+    "standard": "^17.0.0"
   },
   "engines": {
     "node": ">=14.17.0"

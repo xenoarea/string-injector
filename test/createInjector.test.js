@@ -1,4 +1,4 @@
-import inject from "../src/createInjector.js"
+import inject from '../src/createInjector.js'
 import test from 'ava'
 
 test('should replace single placeholder by value', (t) => {

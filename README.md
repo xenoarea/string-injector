@@ -1,4 +1,4 @@
-# stringjector
+# string-injector
 Little helper to replace placeholders by mapped values into a string
 
 ## Ecosystem
@@ -12,7 +12,7 @@ This package has been developped under node v17.9.0 (but probably works on earli
 ## Usage
 
 ```
-import injectValues from '@xenoarea/stringjector'
+import injectValues from '@xenoarea/string-injector'
 
 const valuesMap = {
     name: 'Xeno',

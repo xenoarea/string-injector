@@ -1,2 +1,2 @@
-# stringector
-Little helper to replace placeholders by values inside a string
+# stringjector
+Little helper to replace placeholders by mapped values into a string

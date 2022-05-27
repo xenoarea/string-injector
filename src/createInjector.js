@@ -14,7 +14,6 @@ const findPlaceholdersRegExp = new RegExp(`${opts.open}(.*?)${opts.close}`, 'g')
  * @returns {any} - Value of the values map slice at the given key
  */
 function getValueByKey (valuesMapSlice, key) {
-
   return key === opts.last && Array.isArray(valuesMapSlice)
     ? valuesMapSlice.at(-1)
     : valuesMapSlice[key]

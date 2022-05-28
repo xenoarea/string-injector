@@ -7,7 +7,7 @@ This package has been developped under node v17.9.0 (but probably works on earli
 
 ## Installation
 
-```npm install --save @xenoarea/stringjector```
+```npm install --save @xenoarea/string-injector```
 
 ## Usage
 

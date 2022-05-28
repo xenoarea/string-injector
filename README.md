@@ -36,9 +36,9 @@ console.log(output) //output: I am Xeno, a male of 31 years old and I like doing
 ## Syntax
 
 In the example snippet above you can notice the usage of placeholders starging by `{{` and ending by `}}`.
-Those placeholders are key path of where to find the remplacement value in the given values map object.
-Note also the usage of the `$` character in the key path to signify we want to get the last element of
-an array.
+Those placeholders are key path of where to find the replacement value in the given values map object.
+Note also the usage of the `$` character in the key path. It means the last element of
+an array is targeted.
 
 ## Find me on
 
